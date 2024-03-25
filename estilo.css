@@ -86,10 +86,7 @@ a:hover{
 #titulo{
     font-size: 3rem;
     background-color: #000000;
-    padding: 5px 20px;
-    animation-name: girar;
-    animation-duration: 1s;
-    animation-delay: 1s;
+    padding: 10px 20px;
 }
 
 
