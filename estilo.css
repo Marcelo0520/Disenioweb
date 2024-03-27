@@ -2,105 +2,42 @@
 *{
     font-family: "Roboto", sans-serif;
     margin: 0;
-
 }
+
+
 nav{
     background-color: #20232a;
     display: flex;
     justify-content: space-between;
     padding: 0px 10vw;
     align-items: center;
-    animation-name: bajar;
-    animation-duration: 1s;
 }
 
-@keyframes bajar {
-    0%{
-        transform: translateY(-100px);
-        opacity: 0;
-    }
-    100%{
-        transform: translateY(0px);
-        opacity: 1;
-    }
+
+#logo h1{
+    color: #ffff;
 }
 
-h1,h2{
-    color: #ffff;
-}
-a{
-    color: #ffff;
+#links a{
+    color: white;
     text-decoration: none;
-    transition-duration: .5s;
 }
 
-a:hover{
+#links a:hover{
     color: #218ab6;
     transition-duration: .5s;
 }
 
 #logo{
     display: flex;
-    align-items: center;    
+    align-items: center;  
+    padding: 2.5px 0;  
 }
 
-#logo > img{
-    transition-duration: .5s;
-}
-
-#logo:hover > img{
-    transform: rotate(-30deg);
-    transition-duration: .5s;
-}
 
 #links{
     display: flex;
-    column-gap: 20px;
-}
-
-#banner{
-    display: flex;
-    background-image: url(imagenes/1b49f1229cdbc87159caa92d943ab223.jpg);
-    width: 100%;
-    height: 70vh;
-    background-size: cover;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    row-gap: 20px;
-    animation-name: aparecer;
-    animation-duration: 1s;
-}
-
-@keyframes aparecer {
-    0%{
-        transform: translateX(-400px);
-        opacity: 0;
-    }
-    100%{
-        transform: translateX(0px);
-        opacity: 1;
-    }
-}
-
-#titulo{
-    font-size: 3rem;
-    background-color: #000000;
-    padding: 5px 20px;
-    animation-name: girar;
-    animation-duration: 1s;
-    animation-delay: 1s;
-}
-
-
-#subtitulo{
-    font-size: 1.2rem;
-    background-color: #218ab6;
-    padding: 3px 10px;
-}
-
-section{
-    margin: 80px 120px;
+    column-gap: 25px;
 }
 
 .header{
@@ -112,29 +49,17 @@ section{
     font-size: 2rem;
 }
 
-.content{
+#entre{
     display: flex;
-    justify-content: space-between;
+    width: 100%;
+    height: 2vh;
+    background-color: rgb(195, 218, 136);
+    color: white;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
 }
-
-.left, .right{
-    width: 48%;
-    display: flex;
-    flex-direction: column;
-    row-gap: 25px;
-}
-
-.left > p, .right > p{
-    color: #343434;
-    font-size: .9rem;
-    text-align: justify;
-}
-
-h6{
-    font-size: 1.1rem;
-}
-
-.iconos{
-    display: flex;
-    justify-content: space-between;
+p{
+    background-color: rgb(195, 218, 136);
+    text-align: center;
 }
