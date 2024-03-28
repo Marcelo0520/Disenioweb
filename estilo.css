@@ -2,11 +2,16 @@
 *{
     font-family: "Roboto", sans-serif;
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+body{
+    background-color: white;
+}
 
 nav{
-    background-color: #20232a;
+    background-color: linear-gradient #20232a;
     display: flex;
     justify-content: space-between;
     padding: 0px 10vw;
@@ -15,29 +20,33 @@ nav{
 
 
 #logo h1{
-    color: #ffff;
+    color: rgb(195, 218, 136);
+    font-weight: 400;
 }
 
 #links a{
-    color: white;
+    color: rgb(195, 218, 136);
     text-decoration: none;
+    font-weight: 500;
 }
 
+
 #links a:hover{
-    color: #218ab6;
-    transition-duration: .5s;
+    background-color: rgb(195, 218, 136);
+    border-radius: 5px;
 }
 
 #logo{
     display: flex;
     align-items: center;  
-    padding: 2.5px 0;  
+    padding: 2.5px 0;
+    margin-bottom: 5px; 
 }
 
 
 #links{
     display: flex;
-    column-gap: 25px;
+    column-gap: 20px;
 }
 
 .header{
@@ -45,7 +54,7 @@ nav{
 }
 
 .header>h1{
-    color: #000000;
+    color: rgb(0, 0, 1);
     font-size: 2rem;
 }
 
@@ -59,7 +68,34 @@ nav{
     justify-content: center;
     align-items: center;
 }
-p{
+
+#promo{
     background-color: rgb(195, 218, 136);
     text-align: center;
 }
+
+.subtitulo{
+    text-align: center;
+}
+
+#info{
+    text-align: center;
+    text-justify: newspaper;
+    padding: 20px 150px;
+}
+
+#informacion{
+    padding: 50px 10px;
+    background-color: aquamarine;
+}
+
+.d-block{
+    transition: transform 0.3s ease;
+}
+
+.carousel:hover img{
+    transform: scale(1.02);
+}
+
+
+  
