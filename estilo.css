@@ -115,6 +115,11 @@ nav{
     align-items: center;
     justify-content: center;
     border-top: 1px solid;
-    margin-top: 10px;
     width: 80vw;
+    margin: 10px auto;
+    padding: 10px;
+}
+
+#titulo2 h2{
+    font-size: 1.5rem;
 }
