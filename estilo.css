@@ -16,6 +16,7 @@ nav{
     justify-content: space-between;
     padding: 0px 10vw;
     align-items: center;
+
 }
 
 
@@ -32,8 +33,7 @@ nav{
 
 
 #links a:hover{
-    background-color: rgb(195, 218, 136);
-    border-radius: 5px;
+    border-bottom: solid 2px rgb(195, 218, 136);
 }
 
 #logo{
@@ -78,16 +78,6 @@ nav{
     text-align: center;
 }
 
-#info{
-    text-align: center;
-    text-justify: newspaper;
-    padding: 20px 150px;
-}
-
-#informacion{
-    padding: 50px 10px;
-    background-color: aquamarine;
-}
 
 .d-block{
     transition: transform 0.3s ease;
@@ -98,4 +88,33 @@ nav{
 }
 
 
-  
+#info{
+    display: flex;
+    padding: 0 150px;
+}
+
+
+.cajita{
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    justify-content: center;
+}
+
+.cajita p{
+    font-size: 0.75rem;
+}
+
+.cajita img{
+    width: 30px;
+    height: 30px;
+}
+
+#titulo2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid;
+    margin-top: 10px;
+    width: 80vw;
+}
