@@ -19,7 +19,6 @@ nav{
 
 }
 
-
 #logo h1{
     color: rgb(195, 218, 136);
     font-weight: 400;
@@ -98,7 +97,6 @@ nav{
     display: flex;
     align-items: center;
     column-gap: 20px;
-    justify-content: center;
 }
 
 .cajita p{
