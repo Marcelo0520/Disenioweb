@@ -114,10 +114,47 @@ nav{
     justify-content: center;
     border-top: 1px solid;
     width: 80vw;
-    margin: 10px auto;
-    padding: 10px;
+    margin: 0 auto;
+    padding: 10px 0;
 }
 
 #titulo2 h2{
     font-size: 1.5rem;
+}
+
+/*ESTILO SECCION MANGAS*/
+
+.container{
+    display: grid;
+    padding-top: 0;
+    width: 100%;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+}
+
+
+.card{
+    border: none;
+}
+
+.card-body{
+    display: flex;
+    flex-direction: column;
+}
+
+.card-img-top{
+    width:240px;
+    height: 330px;
+}
+
+.btn{
+    background-color: rgba(255,255,255);
+    color: rgb(0,0,1);
+    border-color: rgb(0, 0, 1);
+    border-radius: 20px;
+}
+
+.btn:hover{
+    background-color: red;
 }
