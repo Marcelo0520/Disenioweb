@@ -16,7 +16,6 @@ nav{
     justify-content: space-between;
     padding: 0px 10vw;
     align-items: center;
-
 }
 
 #logo h1{
@@ -143,10 +142,48 @@ nav{
     flex-direction: column;
 }
 
-.card-img-top{
-    width:240px;
-    height: 330px;
+/*CARD FOTOS*/
+
+.card-image{
+    width: 200px;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+
+#card-1{
+    background-image: url(mangas/spyxfamily.webp);
+}
+
+#card-2{
+    background-image: url(mangas/Vagabond1.jpg);
+}
+
+#card-3{
+    background-image: url(mangas/kimetsu-no-yaiba.webp);
+}
+
+#card-4{
+    background-image: url(mangas/20thboys.webp);
+}
+
+#card-5{
+    background-image: url(mangas/Slam-dunk-.jpg);
+}
+
+#card-6{
+    background-image: url(mangas/jujutsu-kaisen-10.webp);
+}
+
+#card-7{
+    background-image: url(mangas/blue-period-01.webp);
+}
+
+#card-8{
+    background-image: url(mangas/akira.01.webp);
+}
+
+/*https://kodoku.cl/ fuente de fotos manga*/
 
 .btn{
     background-color: rgba(255,255,255);
@@ -157,4 +194,26 @@ nav{
 
 .btn:hover{
     background-color: red;
+}
+
+
+/*NOSOTROS*/
+
+#nosotros{
+    width: 100%;
+}
+
+#nosotros h1{
+    text-align: center;
+}
+
+#nosotros img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+footer{
+    background-color: #fff;
 }
