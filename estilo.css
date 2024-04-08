@@ -11,17 +11,12 @@ body{
 }
 
 nav{
-    background-color: linear-gradient #20232a;
     display: flex;
     justify-content: space-between;
     padding: 0px 10vw;
     align-items: center;
 }
 
-#logo h1{
-    color: rgb(195, 218, 136);
-    font-weight: 400;
-}
 
 #links a{
     color: rgb(195, 218, 136);
@@ -41,6 +36,10 @@ nav{
     margin-bottom: 5px; 
 }
 
+#logo img{
+    width: 150px;
+    height: 80px;
+}
 
 #links{
     display: flex;
@@ -112,7 +111,7 @@ nav{
     align-items: center;
     justify-content: center;
     border-top: 1px solid;
-    width: 80vw;
+    width: 80%;
     margin: 0 auto;
     padding: 10px 0;
 }
@@ -121,20 +120,49 @@ nav{
     font-size: 1.5rem;
 }
 
+.text-focus-in {
+	-webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) ;
+	        animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) ;
+}
+
+ @-webkit-keyframes text-focus-in {
+    0% {
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+  }
+  @keyframes text-focus-in {
+    0% {
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+  }
+  
 /*ESTILO SECCION MANGAS*/
 
 .container{
     display: grid;
     padding-top: 0;
-    width: 100%;
+    width: 100vw;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 10px;
     grid-auto-rows: minmax(100px, auto);
 }
 
-
 .card{
-    border: none;
+    border: none;    
 }
 
 .card-body{
@@ -182,8 +210,6 @@ nav{
 #card-8{
     background-image: url(mangas/akira.01.webp);
 }
-
-/*https://kodoku.cl/ fuente de fotos manga*/
 
 .btn{
     background-color: rgba(255,255,255);
