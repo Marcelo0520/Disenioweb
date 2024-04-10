@@ -66,14 +66,14 @@ nav {
 }
 
 .shopping-cart img{
-  width: 40px;
+  width: 28px;
 }
 
 .shopping-cart > p{
   font-size: .8rem;
-  font-weight: 600;  
+  font-weight: 400;  
   margin-bottom: 0;
-  color: var(--title-button-color);
+  color: rgb(180, 49, 33);
 }
 
 .header {
@@ -396,18 +396,44 @@ nav {
 
 /*NOSOTROS*/
 
-#nosotros {
-  width: 100%;
-}
-
-#nosotros h1 {
-  text-align: center;
-}
-
-#nosotros img {
-  display: flex;
-  flex-wrap: nowrap;
-  align-items: center;
-  justify-content: center;
+.nosotros-imagen{
   width: 50%;
 }
+
+.nosotros-imagen img{
+  width: 85%;
+}
+
+.row-nosotros{
+  display:flex;
+}
+
+.nosotros-imagen{
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0;
+}
+
+
+.nosotros-info{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.nosotros-info h6{
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: white;
+  background-color: var(--title-button-color);
+  padding: 1rem;
+}
+
+/*CATALOGO*/
+
+
+
