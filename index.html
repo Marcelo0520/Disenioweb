@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>KuruMangas Store | Tienda de mangas</title>
 
-    <link rel="icon" href="imagenes/icon.png" />
+    <link rel="icon" href="imagenes/iconno.svg" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -13,6 +13,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="estilo.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   </head>
 
   <body>
@@ -33,6 +34,10 @@
           <a href="#">Catalogo</a>
           <a href="#">Promociones</a>
           <a href="Nosotros.html">Nosotros</a>
+        </div>
+        <div class="shopping-cart">
+          <a href="#" target="_top"><img src="imagenes/Shopping Cart.svg" alt=""></a>
+          <p>Carrito</p>
         </div>
       </nav>
 
@@ -130,14 +135,14 @@
       </div>
 
       <div id="titulo2">
-        <h2>LOS MÁS VENDIDOS</h2>
+        <h2>PRODUCTOS DESTACADOS</h2>
       </div>
 
       <div class="container">
         <div class="card" style="width: 13rem">
-          <div class="card-image" id="card-1" title="jajajj"></div>
+          <div class="card-image" id="card-1"></div>
           <div class="card-body">
-            <h5 class="editorial">IVREA ARG</h5>
+            <h5 class="editorial">IVREA ARGENTINA</h5>
             <h6 class="card-title">SPY X FAMILY 01</h6>
             <p class="card-text">$ 11.990</p>
             <a href="#" class="btn btn-primary">Añadir al carro</a>
@@ -147,7 +152,7 @@
         <div class="card" style="width: 13rem">
           <div class="card-image" id="card-2"></div>
           <div class="card-body">
-            <h5 class="editorial">IVREA ESP</h5>
+            <h5 class="editorial">IVREA ESPAÑA</h5>
             <h6 class="card-title">VAGABOND 01</h6>
             <p class="card-text">$ 19.990</p>
             <a href="#" class="btn btn-primary">Añadir al carro</a>
@@ -157,9 +162,9 @@
         <div class="card" style="width: 13rem">
           <div class="card-image" id="card-3"></div>
           <div class="card-body">
-            <h5 class="editorial">NORMA</h5>
+            <h5 class="editorial">NORMA EDITORIAL</h5>
             <h6 class="card-title">KIMETSU NO YAIBA 01</h6>
-            <p class="card-text">$ 17.000</p>
+            <p class="card-text">$ 13.990</p>
             <a href="#" class="btn btn-primary">Añadir al carro</a>
           </div>
         </div>
@@ -177,8 +182,8 @@
         <div class="card" style="width: 13rem">
           <div class="card-image" id="card-5"></div>
           <div class="card-body">
-            <h5 class="editorial">IVREA ESP</h5>
-            <h6 class="card-title">SLAM DUNK 19</h6>
+            <h5 class="editorial">IVREA ESPAÑA</h5>
+            <h6 class="card-title">SLAM DUNK 15</h6>
             <p class="card-text">$ 35.990</p>
             <a href="#" class="btn btn-primary">Añadir al carro</a>
           </div>
@@ -213,34 +218,74 @@
             <a href="#" class="btn btn-primary">Añadir al carro</a>
           </div>
         </div>
+
+        <div class="card" style="width: 13rem">
+          <div class="card-image" id="card-9" title="jajajj"></div>
+          <div class="card-body">
+            <h5 class="editorial">PLANETA CÓMIC</h5>
+            <h6 class="card-title">BLUE LOCK 01</h6>
+            <p class="card-text">$ 7.900</p>
+            <a href="#" class="btn btn-primary">Añadir al carro</a>
+          </div>
+        </div>
+
+        <div class="card" style="width: 13rem">
+          <div class="card-image" id="card-10"></div>
+          <div class="card-body">
+            <h5 class="editorial">NORMA EDITORIAL</h5>
+            <h6 class="card-title">CHAINSAW MAN 01</h6>
+            <p class="card-text">$ 13.990</p>
+            <a href="#" class="btn btn-primary">Añadir al carro</a>
+          </div>
+        </div>
+
+        <div class="card" style="width: 13rem">
+          <div class="card-image" id="card-11"></div>
+          <div class="card-body">
+            <h5 class="editorial">PLANETA CÓMIC</h5>
+            <h6 class="card-title">PLUTO 01</h6>
+            <p class="card-text">$ 13.900</p>
+            <a href="#" class="btn btn-primary">Añadir al carro</a>
+          </div>
+        </div>
+
+        <div class="card" style="width: 13rem">
+          <div class="card-image" id="card-12"></div>
+          <div class="card-body">
+            <h5 class="editorial">IVREA ESPAÑA</h5>
+            <h6 class="card-title">SAKAMOTO DAYS 10</h6>
+            <p class="card-text">$ 11.990</p>
+            <a href="#" class="btn btn-primary">Añadir al carro</a>
+          </div>
+        </div>
       </div>
     </section>
 
     <section>
       <div id="colaboradores">
-        <div id="tittle">COLABORADORES - EDITORIALES</div>
+        <div class="tittle">COLABORADORES - EDITORIALES</div>
 
         <div class="row-colabs">
           <a
             href="https://www.ivrea.com.ar/"
             class="colaborators"
             target="_blank"
-            ><img src="colaboradores/ivre-arg.png" alt="" /></a
+            ><img src="colaboradores/ivre-arg.png" alt="ivrea argentina" /></a
           ><a
             href="https://www.milkywayediciones.com/collections/all"
             class="colaborators"
             target="_blank"
-            ><img src="colaboradores/milkyway.png" alt="" /></a
+            ><img src="colaboradores/milkyway.png" alt="milkyway" /></a
           ><a
             href="http://editorialivrea.com/ESP/"
             class="colaborators"
             target="_blank"
-            ><img src="colaboradores/ivre-esp.png" alt="" /></a
+            ><img src="colaboradores/ivreaespaña.png" alt="ivreaespaña" /></a
           ><a
             href="https://www.normaeditorial.com/"
             class="colaborators"
             target="_blank"
-            ><img src="colaboradores/norma.png  " alt="" /></a
+            ><img src="colaboradores/norma.png  " alt="normaeditorial" /></a
           ><a
             href="https://www.planetadelibros.cl/editorial/planeta-comic/485"
             class="colaborators"
@@ -265,7 +310,7 @@
               vida diaria, unos "dibujos irrisorios": "manga" en japonés.
             </p>
             <p class="mid">
-              En 1902, Kitazawa Rakuten publicó el primer manga moderno con
+              En 1902, <a href="https://en.wikipedia.org/wiki/Kitazawa_Rakuten" target="_blank">Kitazawa Rakuten</a> publicó el primer manga moderno con
               cuatro viñetas por página y textos mecanografiados. Más tarde, los
               editores japoneses se inspiraron en las publicaciones periódicas
               anglosajonas y sacaron, en los años 1920, revistas mensuales que
@@ -279,7 +324,7 @@
         </div>
         <p class="down" style="padding: 5px 12.2%; text-align: justify;">
           En 1947, cuando la producción de mangas se empezaba a recuperar,
-          Tezuka Osamu, un apasionado del dibujo y fan del cine
+          <a href="https://www.museunacional.cat/es/osamu-tezuka-el-dios-del-manga" target="_blank">Tezuka Osamu</a>, un apasionado del dibujo y fan del cine
           hollywoodiense (en particular de los dibujos animados de Walt
           Disney), reinventa el género con la publicación de Shin Takarajima
           (La nueva isla del tesoro). Una nueva estética, un grafismo
@@ -288,6 +333,63 @@
       </div>
     </section>
 
+    <footer class="footer">
+
+      <div class="container2">
+
+        <div class="footer-row">
+
+          <div class="footer-links">
+
+            <h4>Compañia</h4>
+            <ul>
+              <li><a href="Nosotros.html">Nosotros</a></li>
+              <li><a href="#">Nuestros servicios</a></li>
+              <li><a href="#">Politica de privacidad</a></li>
+              <li><a href="#">Unete</a></li>
+            </ul>
+
+          </div>
+          <div class="footer-links">
+
+            <h4>Ayuda</h4>
+            <ul>
+              <li><a href="#">Preguntas</a></li>
+              <li><a href="#">Compras</a></li>
+              <li><a href="#">Envios</a></li>
+              <li><a href="#">Estatus de origen</a></li>
+              <li><a href="#">Pagos</a></li>           
+            </ul>
+
+          </div>
+          <div class="footer-links">
+
+            <h4>Tienda</h4>
+            <ul>
+              <li><a href="#">Manga</a></li>
+              <li><a href="#">Separadores</a></li>
+              <li><a href="#">Comics</a></li>
+              <li><a href="#">Ropa</a></li>
+            </ul>
+
+          </div>
+          <div class="footer-links">
+
+            <h4>Contacto</h4>
+            <div class="social-link">
+             <a href="https://www.facebook.com/people/Kuru-Mangas/pfbid02cDtnRDqFjepoNicQhkuEwfjNtDgUdV3WVHALkVENBucxR7cX1reT9cbi6jdZfxDzl/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+             <a href="https://www.instagram.com/kurumangas?utm_source=ig_web_button_share_sheet&igsh=MzJiMzQ5ZWQ2Mw== " target="_blank"><i class="fab fa-instagram"></i></a>
+             <a href="https://twitter.com/KuruMangas" target="_blank"><i class="fab fa-twitter"></i></a>
+             <a href="" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </footer>
     
   </body>
 </html>
