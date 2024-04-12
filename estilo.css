@@ -23,7 +23,6 @@ body {
 nav {
   display: flex;
   width: 100%;
-  justify-content: safe;
   align-items: center;
   background-color: rgb(255, 255, 255);
 }
@@ -38,6 +37,7 @@ nav {
 #links a:hover {
   border-bottom: solid 2px rgb(167, 49, 33);
 }
+
 
 #logo {
   display: flex;
@@ -58,20 +58,20 @@ nav {
   column-gap: 2rem;
 }
 
-.shopping-cart{
+.shopping-cart {
   display: flex;
   width: 10%;
   padding: 0 2em;
   align-items: center;
 }
 
-.shopping-cart img{
+.shopping-cart img {
   width: 28px;
 }
 
-.shopping-cart > p{
-  font-size: .8rem;
-  font-weight: 400;  
+.shopping-cart > p {
+  font-size: 0.8rem;
+  font-weight: 400;
   margin-bottom: 0;
   color: rgb(180, 49, 33);
 }
@@ -79,7 +79,6 @@ nav {
 .header {
   height: 10vh;
 }
-
 
 #promo {
   background-color: var(--title-button-color);
@@ -90,8 +89,6 @@ nav {
 .d-block {
   transition: transform 0.3s ease;
 }
-
-
 
 .carousel:hover img {
   transform: scale(1.02);
@@ -166,10 +163,10 @@ nav {
   box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
     rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
   transform: scale(1);
-  transition: .5s;
+  transition: 0.5s;
 }
 
-#card-1 { 
+#card-1 {
   background-image: url(mangas/spyxfamily.webp);
 }
 
@@ -217,10 +214,10 @@ nav {
   background-image: url(mangas/sakamotodays10.jpg);
 }
 
-.card-image:hover{
+.card-image:hover {
   transform: scale(1.05);
-  transition: .5s;
-  transform-origin: bottom;  
+  transition: 0.5s;
+  transform-origin: bottom;
 }
 
 .btn {
@@ -233,6 +230,7 @@ nav {
 .btn:hover {
   background-color: var(--title-button-color);
   border-color: var(--title-button-color);
+  cursor: pointer;
 }
 
 .editorial {
@@ -252,11 +250,10 @@ nav {
 .tittle {
   background-color: var(--title-button-color);
   color: rgb(255, 255, 255);
-  padding:0.5em;
-  margin-bottom: .5em;
+  padding: 0.5em;
+  margin-bottom: 0.5em;
   font-size: 1.2em;
 }
-
 
 .row-colabs {
   display: flex;
@@ -273,7 +270,7 @@ nav {
   width: 175px;
 }
 
-#mangainfo{
+#mangainfo {
   display: flex;
   width: 100%;
   flex-flow: column wrap;
@@ -281,96 +278,96 @@ nav {
   align-items: center;
 }
 
-.up, .mid{
+.up,
+.mid {
   padding-bottom: 10px;
 }
 
-.informacion{
+.informacion {
   display: flex;
   width: 75%;
   gap: 1.5em;
 }
 
-.informacion img{
+.informacion img {
   width: 50%;
   height: auto;
   align-self: start;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-#mangainfo p{
+#mangainfo p {
   text-align: justify;
 }
 
-#mangainfo h3{
+#mangainfo h3 {
   margin-bottom: 1em;
   background-color: var(--title-button-color);
   color: rgb(255, 255, 255);
-  padding: .5em;
+  padding: 0.5em;
 }
 
-#mangainfo h5{
-  color: var(--title-button-color) ;
+#mangainfo h5 {
+  color: var(--title-button-color);
 }
 
-.down{
+.down {
   border-bottom: 1px;
   border-bottom-color: var(--title-button-color);
 }
 
-#mangainfo a{
+#mangainfo a {
   text-decoration: none;
   color: var(--title-button-color);
   font-weight: 500;
-  padding-top: 6px ;
+  padding-top: 6px;
   border-bottom: 2px solid rgb(167, 49, 33) transparent;
 }
 
-#mangainfo a:hover{
+#mangainfo a:hover {
   border-bottom: 2px solid rgb(167, 49, 33);
 }
 
-
-.container2{
+.container2 {
   max-width: 1200px;
   margin: 0 auto;
 }
 
-.footer{
+.footer {
   background-color: rgb(50, 50, 50);
-  padding: 80px 0;  
+  padding: 80px 0;
 }
 
-.footer-row{
+.footer-row {
   display: flex;
   flex-wrap: wrap;
 }
 
-.footer-links{
+.footer-links {
   width: 25%;
   padding: 0 15px;
 }
 
-.footer-links h4{
+.footer-links h4 {
   font-size: 20px;
   color: rgb(255, 255, 254);
   margin-bottom: 25px;
   font-weight: 500;
   border-bottom: 2px solid rgb(255, 255, 254);
-  padding-bottom: 10px ;
+  padding-bottom: 10px;
   display: inline-block;
 }
 
-.footer-links ul li a{
-   font-size: 18px;
-   text-decoration: none;
-   color: rgb(255, 255, 254);
-   display: block;
-   margin-bottom: 15px;
-   transition: all .3s ease;
+.footer-links ul li a {
+  font-size: 18px;
+  text-decoration: none;
+  color: rgb(255, 255, 254);
+  display: block;
+  margin-bottom: 15px;
+  transition: all 0.3s ease;
 }
 
-.footer-links ul li a:hover{
+.footer-links ul li a:hover {
   color: var(--title-button-color);
   padding-left: 6px;
 }
@@ -385,37 +382,34 @@ nav {
   line-height: 40px;
   border-radius: 50%;
   color: rgb(255, 255, 254);
-  transition: all .5s ease;
+  transition: all 0.5s ease;
 }
 
-.social-link a:hover{
+.social-link a:hover {
   background-color: rgb(167, 49, 33);
 }
 
-
-
 /*NOSOTROS*/
 
-.nosotros-imagen{
+.nosotros-imagen {
   width: 50%;
 }
 
-.nosotros-imagen img{
+.nosotros-imagen img {
   width: 85%;
 }
 
-.row-nosotros{
-  display:flex;
+.row-nosotros {
+  display: flex;
 }
 
-.nosotros-imagen{
+.nosotros-imagen {
   display: flex;
   justify-content: center;
   padding: 1rem 0;
 }
 
-
-.nosotros-info{
+.nosotros-info {
   width: 50%;
   display: flex;
   flex-direction: column;
@@ -425,7 +419,7 @@ nav {
   justify-content: center;
 }
 
-.nosotros-info h6{
+.nosotros-info h6 {
   font-size: 2.5rem;
   font-weight: 400;
   color: white;
@@ -435,5 +429,307 @@ nav {
 
 /*CATALOGO*/
 
+.row-container {
+  width: 100%;
+  display: flex;
+}
+
+.contenedor {
+  width: 100%;
+}
+
+.titulo-catalogo {
+  width: 100%;
+  text-align: center;
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.titulo-catalogo h1 {
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+
+.left {
+  display: flex;
+  width: 30%;
+  justify-content: center;
+  padding: 1rem 0;
+}
 
 
+
+.left a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+.left li {
+  padding: 0.6rem 0;
+}
+
+.left h4 {
+  font-weight: 400;
+  font-size: 20px;
+  border-bottom: 1px solid rgb(167, 49, 33);
+  color: rgb(167, 49, 33);
+}
+
+.right {
+  width: 70%;
+}
+
+.encabezado-right {
+  padding: 20px;
+}
+
+.right h3 {
+  font-weight: 400;
+  font-size: 25px;
+  text-align: center;
+  color: var(--title-button-color);
+}
+
+.arriba {
+  display: flex;
+  align-items: center;
+  gap: 20%;
+  justify-content: space-around;
+}
+
+/*DESPLEGABLE DE ORDENAMIENTO*/
+
+.dropbtn {
+  background-color: rgb(255, 255, 254);
+  color: rgb(0, 0, 0);
+  padding: 5px 2px;
+  font-size: 12px;
+  border: none;
+  width: 250px;
+  transition: all 0.5s ease;
+  border: 1px solid rgb(0, 0, 0);
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-lista {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-lista a {
+  color: rgb(150, 150, 150);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-lista a:hover {
+  background-color: rgb(255, 255, 254);
+  color: black;
+}
+
+.dropdown:hover .dropdown-lista {
+  display: block;
+}
+
+
+/*DEMÁS*/
+
+.content{
+  position: sticky;
+  top: 10%;
+}
+
+.colecciones{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10vh;
+}
+
+.producto-coleccion{
+  width: 100%;
+  height: 5%;
+}
+
+.manga-producto{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.imagen-manga{
+  width: 175px;
+  height: 250px;
+  display: flex;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+.coleccion-paginacion{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.pagination a{
+  background-color: rgb(255, 255, 254);
+  color: rgb(0, 0, 1);
+}
+
+
+.disponible-vendido{
+  padding: 6px 0 0 6px;
+  position: absolute;
+  color: rgb(255, 255, 254);
+}
+
+.disponible-vendido div{
+  padding: 0 6px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.mas{
+  background-color: rgb(255, 113, 67);
+  margin-bottom: 6px ;
+  padding: 0 6px;
+}
+
+.disp{
+  background-color: rgba(37, 167, 153);
+  padding: 0 6px;
+}
+
+.descuento{
+  margin-bottom: 6px;
+  text-align: left;
+  background-color: rgb(255,0,0);
+  width: 50px;
+}
+
+.producto-info{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.producto-info h3{
+  width: 100%;
+  text-align: left;
+
+}
+
+.producto-info h5{
+  width: 100%;
+  font-weight: 400;
+  text-align: left;
+  font-size: 15px;
+}
+
+.precio-producto{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 0 2rem;
+}
+
+.precios{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.precio-producto p{
+  font-size: 20px;
+}
+
+
+
+/*MANGAS IMAGENES*/
+
+#manga-1{
+  background-image: url(catalogo/20th01.webp);
+  background-size: cover;
+}
+
+#manga-2{
+  background-image: url(mangas/20thboys.webp);
+  background-size: cover;
+}
+
+#manga-3{
+  background-image: url(catalogo/2Oth4.webp);
+  background-size: cover;
+}
+
+#manga-4{
+  background-image: url(catalogo/20th05.webp);
+  background-size: cover;
+}
+
+#manga-5{
+  background-image: url(catalogo/20th6.webp);
+  background-size: cover;
+}
+
+#manga-6{
+  background-image: url(catalogo/20th07.webp);
+  background-size: cover;
+}
+
+#manga-7{
+  background-image: url(catalogo/20th08.webp);
+  background-size: cover;
+}
+
+#manga-8{
+  background-image: url(catalogo/20th09.webp);
+  background-size: cover;
+}
+
+#manga-9{
+  background-image: url(catalogo/20th11.webp);
+  background-size: cover;
+}
+
+#manga-10{
+  background-image: url(catalogo/bananafish1.jpg);
+  background-size: cover;
+}
+
+#manga-11{
+  background-image: url(catalogo/bananafish2.jpg);
+  background-size: cover;
+}
+
+#manga-12{
+  background-image: url(catalogo/bananafish3.jpg);
+  background-size: cover;
+}
+
+#manga-13{
+  background-image: url(catalogo/bananafish4.webp);
+  background-size: cover;
+}
+
+#manga-14{
+  background-image: url(catalogo/punpun1.webp);
+  background-size: cover;
+}
+
+.descuentito{
+  text-decoration-line: line-through;
+}
