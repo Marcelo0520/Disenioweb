@@ -24,8 +24,13 @@ nav {
   display: flex;
   width: 100%;
   align-items: center;
+  justify-content: space-between;
   background-color: rgb(255, 255, 255);
+  padding: 5px 30px;
 }
+
+
+
 
 #links a {
   color: rgb(167, 49, 33);
@@ -58,23 +63,120 @@ nav {
   column-gap: 2rem;
 }
 
-.shopping-cart {
+/*carro de compras*/
+
+.icon-cart{
+  width: 40px;
+  height: 40px;
+  stroke: #000;
+}
+
+
+.icon-cart:hover{
+  cursor: pointer;
+}
+
+.container-icon{
+  position: relative;
+}
+
+.count-products{
+  position: absolute;
+  top: 55%;
+  right: 0;
+
+  background-color: #000;
+  color: #fff;
+  width: 25px;
+  height: 25px;
+
   display: flex;
-  width: 10%;
-  padding: 0 2em;
+  justify-content: center;
   align-items: center;
+  border-radius: 50%;
 }
 
-.shopping-cart img {
-  width: 28px;
+#contador-productos{
+  font-size: 12px;
 }
 
-.shopping-cart > p {
-  font-size: 0.8rem;
+.container-cart-products{
+  position: absolute;
+  top: 50px;
+  right: 0;
+
+  background-color: #fff;
+  width: 400px;
+  z-index: 1;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
+  border-radius: 10px;
+  
+}
+
+.cart-product{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px;
+
+  border-bottom: 1px solid rgba(0, 0, 0, 0.20);
+
+}
+
+.info-cart-product{
+  display: flex;
+  justify-content: space-between;
+  flex: 0.8;
+}
+
+.titulo-producto-carrito{
+  font-size: 20px;
+}
+
+.precio-producto-carrito{
+  font-weight: 700;
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+.cantidad-producto-carrito{
   font-weight: 400;
-  margin-bottom: 0;
-  color: rgb(180, 49, 33);
+  font-size: 20px;
 }
+
+.icon-close{
+  width: 25px;
+  height: 25px;
+}
+
+.icon-close:hover{
+  stroke: red;
+  cursor: pointer;
+}
+
+.cart-total{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  gap: 20px;
+}
+
+.cart-total h3{
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.total-pagar{
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.hidden-cart{
+  display: none;
+}
+
+
 
 .header {
   height: 10vh;
@@ -810,4 +912,90 @@ nav {
   background-image: url(ofertas/fullmetal2.webp);
   background-size: cover;
 }
+
+/*NOVEDADES*/
+
+.novedades{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 4rem 7rem;
+}
+
+.novedades h6{
+  font-size:3rem;
+  font-weight: 400;
+}
+
+.novedades p{
+  text-align: justify;
+}
+
+.p-p{
+  width: 100%;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid black;
+}
+
+#manga-30{
+  background-image: url(novedades/muerteasfiexiante.webp);
+  background-size: cover;
+}
+
+#manga-31{
+  background-image: url(novedades/the-horizon-vol-1.jpg);
+  background-size: cover;
+}
+
+#manga-32{
+  background-image: url(novedades/versus2.jpg);
+  background-size: cover;
+}
+
+#manga-33{
+  background-image: url(novedades/thebeggining.webp);
+  background-size: cover;
+}
+
+#manga-34{
+  background-image: url(novedades/theboxer.webp);
+  background-size: cover;
+}
+
+#manga-35{
+  background-image: url(novedades/hokkaido.jpg);
+  background-size: cover;
+}
+
+#manga-36{
+  background-image: url(novedades/homunculus8.jpg);
+  background-size: cover;
+}
+
+#manga-37{
+  background-image: url(novedades/sdete001.webp);
+  background-size: cover;
+}
+
+#manga-38{
+  background-image: url(novedades/sobrecubierta_los_diarios_de_la_boticaria_.webp);
+  background-size: cover;
+}
+
+#manga-39{
+  background-image: url(novedades/sobrecubierta_los_diarios_de_la_boticaria_2.webp);
+  background-size: cover;
+}
+
+#manga-40{
+  background-image: url(novedades/slamdunk16.jpg);
+  background-size: cover;
+}
+
+#manga-41{
+  background-image: url(novedades/sikim002.webp);
+  background-size: cover;
+}
+
 

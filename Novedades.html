@@ -1,92 +1,619 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Novedades</title>
-    <link rel="icon" href="imagenes/iconno.svg">
-    <link rel="stylesheet" href="estilo.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-
-</head>
-<body>
-
+    <link rel="icon" href="imagenes/iconno.svg" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="estilo.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <script src="index.js"></script>
     <header>
-        <nav>
-          <div id="logo">
-            <img src="imagenes/logo2pagina.svg" alt="logo" />
+      <nav>
+        <div id="logo">
+          <img src="imagenes/logo2pagina.svg" alt="logo" />
+        </div>
+        <div id="links">
+          <a href="index.html">Inicio</a>
+          <a href="Novedades.html">Novedades</a>
+          <a href="Catalogo.html">Catalogo</a>
+          <a href="Promociones.html">Promociones</a>
+          <a href="Nosotros.html">Nosotros</a>
+        </div>
+        <div class="container-icon">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="icon-cart"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"
+            />
+          </svg>
+          <div class="count-products">
+            <span id="contador-productos">0</span>
           </div>
-          <div id="links">
-            <a href="index.html">Inicio</a>
-            <a href="Novedades.html">Novedades</a>
-            <a href="Catalogo.html">Catalogo</a>
-            <a href="Promociones.html">Promociones</a>
-            <a href="Nosotros.html">Nosotros</a>
+
+          <div class="container-cart-products hidden-cart">
+            <div class="cart-product">
+              <div class="info-cart-product">
+                <span class="cantidad-producto-carrito">1</span>
+                <p class="titulo-producto-carrito">Zapatos Nike</p>
+                <span class="precio-producto-carrito">$80</span>
+              </div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="icon-close"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </div>
+            <div class="cart-total">
+              <h3>Total:</h3>
+              <span class="total-pagar">$200</span>
+            </div>
           </div>
-          <div class="shopping-cart">
-            <a href="#" target="_top"><img src="imagenes/Shopping Cart.svg" alt=""></a>
-            <p>Carrito</p>
-          </div>
-        </nav>
+        </div>
+      </nav>
     </header>
 
+    <div class="contenedor">
+      <div class="novedades">
+        <h6>NOVEDADES</h6>
+        <p>¡Bienvenido a la sección de novedades de Kurumanga!</p>
+        <p class="p-p">
+          ¡Prepárate para explorar las nuevas aventuras que te esperan en
+          nuestras estanterías digitales y físicas! Desde las últimas obras
+          maestras de tus mangakas favoritos hasta las emocionantes sorpresas
+          que tenemos reservadas para ti, esta es tu puerta de entrada a un
+          universo de emociones, acción y fantasía.
+        </p>
+      </div>
+
+      <div class="row-container">
+        <div class="left">
+          <div class="checkbox-diseño">
+            <div class="content">
+              <h4 class="title">EDITORIAL</h4>
+
+              <ul class="items">
+                <li class="item">
+                  <label for="editorial-1">
+                    <input
+                      type="checkbox"
+                      id="editorial-1"
+                      name="checkbox-1"
+                      value="arechi-manga"
+                    />
+
+                    <a href="#" role="button" class="term-label">
+                      ARECHI MANGA
+                    </a>
+                  </label>
+                </li>
+
+                <li class="item">
+                  <label for="editorial-2">
+                    <input
+                      type="checkbox"
+                      id="editorial-1"
+                      name="filter[259076][6]"
+                      value="ivrea-argentina"
+                    />
+
+                    <a href="#" role="button" class="term-label">
+                      IVREA ARGENTINA
+                    </a>
+                  </label>
+                </li>
+
+                <li class="item">
+                  <label for="editorial-3">
+                    <input
+                      type="checkbox"
+                      id="editorial-3"
+                      name="filter[259076][6]"
+                      value="ivrea-españa"
+                    />
+
+                    <a href="#" role="button" class="term-label">
+                      IVREA ESPAÑA
+                    </a>
+                  </label>
+                </li>
+
+                <li class="item">
+                  <label for="editorial-4">
+                    <input
+                      type="checkbox"
+                      id="editorial-4"
+                      name="filter[259076][6]"
+                      value="milkyway"
+                    />
+
+                    <a href="#" role="button" class="term-label"> MILKY WAY </a>
+                  </label>
+                </li>
+
+                <li class="item">
+                  <label for="editorial-5">
+                    <input
+                      type="checkbox"
+                      id="editorial-5"
+                      name="filter[259076][6]"
+                      value="norma-editorial"
+                    />
+
+                    <a href="#" role="button" class="term-label">
+                      NORMA EDITORIAL
+                    </a>
+                  </label>
+                </li>
+
+                <li class="item">
+                  <label for="editorial-6">
+                    <input
+                      type="checkbox"
+                      id="editorial-6"
+                      name="filter[259076][6]"
+                      value="panini-españa"
+                    />
+
+                    <a href="#" role="button" class="term-label">
+                      PANINI ESPAÑA
+                    </a>
+                  </label>
+                </li>
+
+                <li class="item">
+                  <label for="editorial-7">
+                    <input
+                      type="checkbox"
+                      id="editorial-7"
+                      name="filter[259076][6]"
+                      value="planeta-comic"
+                    />
+
+                    <a href="#" role="button" class="term-label">
+                      PLANETA COMIC
+                    </a>
+                  </label>
+                </li>
+
+                <li class="item">
+                  <label for="editorial-8">
+                    <input
+                      type="checkbox"
+                      id="editorial-8"
+                      name="filter[259076][6]"
+                      value="tomodomo"
+                    />
+
+                    <a href="#" role="button" class="term-label"> TOMODOMO </a>
+                  </label>
+                </li>
+
+                <li class="item">
+                  <label for="editorial-8">
+                    <input
+                      type="checkbox"
+                      id="editorial-8"
+                      name="filter[259076][6]"
+                      value="tomodomo"
+                    />
+
+                    <a href="#" role="button" class="term-label">
+                      VERTICAL COMICS
+                    </a>
+                  </label>
+                </li>
+
+                <li class="item">
+                  <label for="editorial-8">
+                    <input
+                      type="checkbox"
+                      id="editorial-8"
+                      name="filter[259076][6]"
+                      value="tomodomo"
+                    />
+
+                    <a href="#" role="button" class="term-label">
+                      WOLU CHILE
+                    </a>
+                  </label>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="right">
+          <div class="encabezado-right">
+            <h3>Añadidos Recientemente</h3>
+          </div>
+
+          <div class="coleccion">
+            <div class="arriba">
+              <div class="productos">
+                <p>Mostrando 630 productos</p>
+              </div>
+
+              <div class="dropdown">
+                <button class="dropbtn">Ordenar: Últimos añadidos</button>
+                <div class="dropdown-lista">
+                  <a href="#">Características</a>
+                  <a href="#">Más vendidos</a>
+                  <a href="#">Alfabéticamente A-Z</a>
+                  <a href="#">Precio, menor a mayor</a>
+                  <a href="#">Precio, mayor a menor</a>
+                  <a href="#">Alfabéticamente Z-A</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="colecciones">
+              <div class="producto-coleccion">
+                <div class="manga-producto">
+                  <div class="imagen-manga" id="manga-30">
+                    <div class="disponible-vendido">
+                      <div class="disp">Disponible</div>
+                    </div>
+                  </div>
+
+                  <div class="producto-info">
+                    <h3>UNA MUERTE ASFIXIANTE Y SOLITARIA N.3</h3>
+                    <h5>DISPONIBILIDAD: Disponible (2 artículos)</h5>
+                    <h5>EDITORIAL: PANINI ESPAÑA</h5>
+                  </div>
+
+                  <div class="precio-producto">
+                    <p>$14.990</p>
+                    <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="producto-coleccion">
+                <div class="manga-producto">
+                  <div class="imagen-manga" id="manga-31">
+                    <div class="disponible-vendido">
+                      <div class="disp">Disponible</div>
+                    </div>
+                  </div>
+
+                  <div class="producto-info">
+                    <h3>THE HORIZON 1</h3>
+                    <h5>DISPONIBILIDAD: Disponible (7 artículo)</h5>
+                    <h5>EDITORIAL: TOMODOMO</h5>
+                  </div>
+
+                  <div class="precio-producto">
+                    <p>$24.500</p>
+                    <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="producto-coleccion">
+                <div class="manga-producto">
+                  <div class="imagen-manga" id="manga-32">
+                    <div class="disponible-vendido">
+                      <div class="disp">Disponible</div>
+                    </div>
+                  </div>
+
+                  <div class="producto-info">
+                    <h3>VERSUS 02</h3>
+                    <h5>DISPONIBILIDAD: Disponible (4 artículos)</h5>
+                    <h5>EDITORIAL: IVREA ESPAÑA</h5>
+                  </div>
+
+                  <div class="precio-producto">
+                    <p>$13.490</p>
+                    <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="producto-coleccion">
+                <div class="manga-producto">
+                  <div class="imagen-manga" id="manga-33">
+                    <div class="disponible-vendido">
+                      <div class="disp">Disponible</div>
+                    </div>
+                  </div>
+
+                  <div class="producto-info">
+                    <h3>THE BEGINNING AFTER THE END 1</h3>
+                    <h5>DISPONIBILIDAD: Disponible (3 artículos)</h5>
+                    <h5>EDITORIAL: NORMA EDITORIAL</h5>
+                  </div>
+
+                  <div class="precio-producto">
+                    <p>$24.490</p>
+                    <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="producto-coleccion">
+                <div class="manga-producto">
+                  <div class="imagen-manga" id="manga-34">
+                    <div class="disponible-vendido">
+                      <div class="disp">Disponible</div>
+                    </div>
+                  </div>
+
+                  <div class="producto-info">
+                    <h3>THE BOXER 01</h3>
+                    <h5>DISPONIBILIDAD: Disponible (5 artículos)</h5>
+                    <h5>EDITORIAL: NORMA EDITORIAL</h5>
+                  </div>
+
+                  <div class="precio-producto">
+                    <p>$24.490</p>
+                    <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="producto-coleccion">
+                <div class="manga-producto">
+                  <div class="imagen-manga" id="manga-35">
+                    <div class="disponible-vendido">
+                      <div class="disp">Disponible</div>
+                    </div>
+                  </div>
+
+                  <div class="producto-info">
+                    <h3>HOKKAIDO GALS ARE SUPER ADORABLE 02</h3>
+                    <h5>DISPONIBILIDAD: Disponible (3 artículos)</h5>
+                    <h5>EDITORIAL: IVREA ESPAÑA</h5>
+                  </div>
+
+                  <div class="precio-producto">
+                    <p>$23.500</p>
+                    <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="producto-coleccion">
+                <div class="manga-producto">
+                  <div class="imagen-manga" id="manga-36">
+                    <div class="disponible-vendido">
+                      <div class="disp">Disponible</div>
+                    </div>
+                  </div>
+
+                  <div class="producto-info">
+                    <h3>HOMUNCULUS 08</h3>
+                    <h5>DISPONIBILIDAD: Disponible (4 artículos)</h5>
+                    <h5>EDITORIAL: IVREA ESPAÑA</h5>
+                  </div>
+
+                  <div class="precio-producto">
+                    <p>$22.990</p>
+                    <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="producto-coleccion">
+                <div class="manga-producto">
+                  <div class="imagen-manga" id="manga-37">
+                    <div class="disponible-vendido">
+                      <div class="disp">Disponible</div>
+                    </div>
+                  </div>
+
+                  <div class="producto-info">
+                    <h3>DETECTIVE DE DETECTIVES</h3>
+                    <h5>DISPONIBILIDAD: Disponible (4 artículos)</h5>
+                    <h5>EDITORIAL: PLANETA COMIC</h5>
+                  </div>
+
+                  <div class="precio-producto">
+                    <p>$29.990</p>
+                    <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="producto-coleccion">
+                <div class="manga-producto">
+                  <div class="imagen-manga" id="manga-38">
+                    <div class="disponible-vendido">
+                      <div class="disp">Disponible</div>
+                    </div>
+                  </div>
+
+                  <div class="producto-info">
+                    <h3>LOS DIARIOS DE LA BOTICARIA NÚM. 03</h3>
+                    <h5>DISPONIBILIDAD: Disponible (8 artículos)</h5>
+                    <h5>EDITORIAL: VERTICAL COMICS</h5>
+                  </div>
+
+                  <div class="precio-producto">
+                    <p>$15.490</p>
+                    <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="producto-coleccion">
+                <div class="manga-producto">
+                  <div class="imagen-manga" id="manga-39">
+                    <div class="disponible-vendido">
+                      <div class="disp">Disponible</div>
+                    </div>
+                  </div>
+
+                  <div class="producto-info">
+                    <h3>LOS DIARIOS DE LA BOTICARIA NÚM. 02</h3>
+                    <h5>DISPONIBILIDAD: Disponible (3 artículos)</h5>
+                    <h5>EDITORIAL: VERTICAL COMICS</h5>
+                  </div>
+
+                  <div class="precio-producto">
+                    <p>$15.490</p>
+                    <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="producto-coleccion">
+                <div class="manga-producto">
+                  <div class="imagen-manga" id="manga-40">
+                    <div class="disponible-vendido">
+                      <div class="disp">Disponible</div>
+                    </div>
+                  </div>
+
+                  <div class="producto-info">
+                    <h3>SLAM DUNK NEW EDITION VOL 16</h3>
+                    <h5>DISPONIBILIDAD: Disponible (2 artículos)</h5>
+                    <h5>EDITORIAL: IVREA ESPAÑA</h5>
+                  </div>
+
+                  <div class="precio-producto">
+                    <p>$21.990</p>
+                    <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="producto-coleccion">
+                <div class="manga-producto">
+                  <div class="imagen-manga" id="manga-41">
+                    <div class="disponible-vendido">
+                      <div class="disp">Disponible</div>
+                    </div>
+                  </div>
+
+                  <div class="producto-info">
+                    <h3>IKIGAMI N.2</h3>
+                    <h5>DISPONIBILIDAD: Disponible (5 artículos)</h5>
+                    <h5>EDITORIAL: PANINI ESPAÑA</h5>
+                  </div>
+
+                  <div class="precio-producto">
+                    <p>$25.990</p>
+                    <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="coleccion-paginacion">
+                <div class="paginacion">
+                  <nav aria-label="Page navigation example">
+                    <ul class="pagination justify-content-center">
+                      <li class="page-item disabled">
+                        <a class="page-link">Anterior</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">1</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">2</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">3</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">...</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">45</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">Siguiente</a>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <footer class="footer">
-
-        <div class="container2">
-  
-          <div class="footer-row">
-  
-            <div class="footer-links">
-  
-              <h4>Compañia</h4>
-              <ul>
-                <li><a href="Nosotros.html">Nosotros</a></li>
-                <li><a href="#">Nuestros servicios</a></li>
-                <li><a href="#">Politica de privacidad</a></li>
-                <li><a href="#">Unete</a></li>
-              </ul>
-  
-            </div>
-            <div class="footer-links">
-  
-              <h4>Ayuda</h4>
-              <ul>
-                <li><a href="#">Preguntas</a></li>
-                <li><a href="#">Compras</a></li>
-                <li><a href="#">Envios</a></li>
-                <li><a href="#">Estatus de origen</a></li>
-                <li><a href="#">Pagos</a></li>           
-              </ul>
-  
-            </div>
-            <div class="footer-links">
-  
-              <h4>Tienda</h4>
-              <ul>
-                <li><a href="#">Manga</a></li>
-                <li><a href="#">Separadores</a></li>
-                <li><a href="#">Comics</a></li>
-                <li><a href="#">Ropa</a></li>
-              </ul>
-  
-            </div>
-            <div class="footer-links">
-  
-              <h4>Contacto</h4>
-              <div class="social-link">
-             <a href="https://www.facebook.com/people/Kuru-Mangas/pfbid02cDtnRDqFjepoNicQhkuEwfjNtDgUdV3WVHALkVENBucxR7cX1reT9cbi6jdZfxDzl/" target="_blank"><i class="fab fa-facebook-f"></i></a>
-             <a href="https://www.instagram.com/kurumangas?utm_source=ig_web_button_share_sheet&igsh=MzJiMzQ5ZWQ2Mw== " target="_blank"><i class="fab fa-instagram"></i></a>
-             <a href="https://twitter.com/KuruMangas" target="_blank"><i class="fab fa-twitter"></i></a>
-              </div>
-  
-            </div>
-  
+      <div class="container2">
+        <div class="footer-row">
+          <div class="footer-links">
+            <h4>Compañia</h4>
+            <ul>
+              <li><a href="Nosotros.html">Nosotros</a></li>
+              <li><a href="#">Nuestros servicios</a></li>
+              <li><a href="#">Politica de privacidad</a></li>
+              <li><a href="#">Unete</a></li>
+            </ul>
           </div>
-  
+          <div class="footer-links">
+            <h4>Ayuda</h4>
+            <ul>
+              <li><a href="#">Preguntas</a></li>
+              <li><a href="#">Compras</a></li>
+              <li><a href="#">Envios</a></li>
+              <li><a href="#">Estatus de origen</a></li>
+              <li><a href="#">Pagos</a></li>
+            </ul>
+          </div>
+          <div class="footer-links">
+            <h4>Tienda</h4>
+            <ul>
+              <li><a href="#">Manga</a></li>
+              <li><a href="#">Separadores</a></li>
+              <li><a href="#">Comics</a></li>
+              <li><a href="#">Ropa</a></li>
+            </ul>
+          </div>
+          <div class="footer-links">
+            <h4>Contacto</h4>
+            <div class="social-link">
+              <a
+                href="https://www.facebook.com/people/Kuru-Mangas/pfbid02cDtnRDqFjepoNicQhkuEwfjNtDgUdV3WVHALkVENBucxR7cX1reT9cbi6jdZfxDzl/"
+                target="_blank"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/kurumangas?utm_source=ig_web_button_share_sheet&igsh=MzJiMzQ5ZWQ2Mw== "
+                target="_blank"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="https://twitter.com/KuruMangas" target="_blank"
+                ><i class="fab fa-twitter"></i
+              ></a>
+            </div>
+          </div>
         </div>
-  
-      </footer>
-      
-</body>
+      </div>
+    </footer>
+  </body>
 </html>
