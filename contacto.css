@@ -1,0 +1,53 @@
+:root {
+    --title-button-color: rgb(167, 49, 33);
+    --editorial: rgba(255, 49, 20, 0.8);
+    --size-editorial: 0.7rem;
+    --size-manga-tittle: 1rem;
+}
+
+*::after, *::before, *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+form{
+    width: 40%;
+    margin: 0 auto;
+}
+
+fieldset{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 2em auto;
+    border: none;
+    padding: 2rem 0;
+}
+
+h1,p {
+    text-align: center;
+}
+
+label{
+    display: block;
+    margin:.5em 0;
+}
+
+input,textarea{
+    width: 100%;
+}
+
+.inline{
+    width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+    display: inline;
+}
+
+#submit{
+    padding: 1em;
+    background-color: rgb(167, 49, 33);
+    color: var(--title-button-color);
+}

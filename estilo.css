@@ -186,8 +186,6 @@ nav {
   display: none;
 }
 
-
-
 .header {
   height: 10vh;
 }
@@ -484,7 +482,7 @@ nav {
   padding-left: 6px;
 }
 
-.social-link a {
+.social-link .social   {
   display: inline-block;
   min-height: 40px;
   width: 40px;
@@ -497,7 +495,7 @@ nav {
   transition: all 0.5s ease;
 }
 
-.social-link a:hover {
+.social-link .social:hover {
   background-color: rgb(167, 49, 33);
 }
 
@@ -537,6 +535,19 @@ nav {
   color: white;
   background-color: var(--title-button-color);
   padding: 1rem;
+}
+
+.contactanos{
+  font-size: 18px;
+  text-decoration: none;
+  color: rgb(255, 255, 254);  
+  padding-bottom: 15px;
+  transition: all 0.3s ease;
+}
+
+.contactanos:hover{
+  color: var(--title-button-color);
+  padding-left: 6px;
 }
 
 /*CATALOGO*/
