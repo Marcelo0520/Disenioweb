@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contactanos</title>
+    <link rel="icon" href="imagenes/iconno.svg" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -87,35 +88,35 @@
         <div class="contactus">
 
             <h1>FORMULARIO DE CONTACTO</h1>
-            <p>En este formulario tendrás la facilidad de escribirnos</p>
+            <p>En este formulario tendrás la facilidad de comunicarte con nosotros.</p>
             <form action="#">
 
                 <fieldset>
 
-                    <label class="obligatorio" for="name">Introduzca su nombre
+                    <label for="name">Introduzca su nombre
                         <input type="text" id="name" required placeholder="Juanito">
                     </label>
     
-                    <label class="obligatorio" for="lastname">Introduzca su apellido
+                    <label  for="lastname">Introduzca su apellido
                         <input type="text" id="lastname" required placeholder="Perez"> 
                     </label>
     
-                    <label class="obligatorio" for="email">Introduzca su correo
+                    <label for="email">Introduzca su correo
                         <input type="email" name="emailuser" id="email" required placeholder="algomasalgo@gmail.com">
                     </label>
     
-                    <label class="obligatorio" for="password">Introduzca su contraseña
+                    <label for="password">Introduzca su contraseña
                         <input type="password" name="passworduser" id="password" required placeholder="micontraseña">
                     </label>
     
                     <label for="mensaje">Escríbenos un mensaje:
-                        <textarea name="" id="mensaje" cols="30" rows="3"></textarea>
+                        <textarea name="" id="mensaje" cols="30" rows="3" placeholder="Me gustaría que en próximas fechas traigan (nombre del manga)."></textarea>
                     </label>
 
                     <label for="terms-and-conditions">
-                        <input class="inline" id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" /> I accept the <a href="#">terms and conditions</a>
+                        <input class="inline" id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" /> Acepto los <a href="#" class="enlaceterms">términos y condiciones.</a>
                       </label>
-                      <a id="submit" type="submit" value="Submit">Enviar</a>
+                      <button class="submit" type="submit">Enviar</button>
                         
                 </fieldset>
 
@@ -183,5 +184,7 @@
         </div>
   
       </footer>
+
+      <script src="formulario.js"></script>
 </body>
 </html>
