@@ -1020,3 +1020,17 @@ nav {
 }
 
 
+/*login/registro*/
+
+.login-register{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  border-bottom: 1px solid rgb(150,150,150);
+  padding: .1em 1em;
+}
+
+.login-register a{
+  text-decoration: none;
+  color: rgb(48, 43, 43);
+}

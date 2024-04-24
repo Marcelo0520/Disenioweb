@@ -11,9 +11,10 @@
     box-sizing: border-box;
 }
 
+
 h1{
     background-color: rgb(229, 229, 229);
-    margin: 1em auto;
+    margin: 0 auto .5em auto;
     padding: 1em 4em;
     font-weight: 400;
 }
@@ -21,6 +22,9 @@ h1{
 form{
     width: 40%;
     margin: 0 auto;
+    background-color: rgb(229, 229, 229);
+    padding: 0 4em;
+    border-radius: 5%;
 }
 
 fieldset{
@@ -39,11 +43,14 @@ h1,p {
 label{
     display: block;
     margin:.5em 0;
-    font-weight: 400;
+    font-weight: bold;
 }
 
-input,textarea{
+input{
     width: 100%;
+    margin-top: .3em;
+    border: 1px solid rgb(0,0,1);
+    padding: .5em;
 }
 
 .inline{
@@ -60,7 +67,6 @@ input,textarea{
 
 .enlaceterms:hover{
     border-bottom: 2px solid rgb(167, 49, 33);
-    
 }
 
 .submit{
@@ -81,8 +87,4 @@ input,textarea{
     background-color: rgb(167, 49, 33);
     color: rgb(255,255,254);   
     box-shadow: 3px 0px 30px rgba(163,163,163, 1);
-}
-
-input{
-    border: 1px solid rgb(167, 49, 33);
 }
