@@ -27,6 +27,7 @@ form{
     border-radius: 5%;
 }
 
+
 fieldset{
     display: flex;
     flex-direction: column;

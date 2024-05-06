@@ -65,22 +65,22 @@ nav {
 
 /*carro de compras*/
 
-.icon-cart{
+.icon-cart {
   width: 40px;
   height: 40px;
   stroke: #000;
 }
 
 
-.icon-cart:hover{
+.icon-cart:hover {
   cursor: pointer;
 }
 
-.container-icon{
+.container-icon {
   position: relative;
 }
 
-.count-products{
+.count-products {
   position: absolute;
   top: 55%;
   right: 0;
@@ -96,11 +96,11 @@ nav {
   border-radius: 50%;
 }
 
-#contador-productos{
+#contador-productos {
   font-size: 12px;
 }
 
-.container-cart-products{
+.container-cart-products {
   position: absolute;
   top: 50px;
   right: 0;
@@ -110,20 +110,20 @@ nav {
   z-index: 1;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
   border-radius: 10px;
-  
+
 }
 
-.container-cart-products span{
+.container-cart-products span {
   font-size: 20px;
   font-weight: 400;
 }
 
-.container-cart-products p{
+.container-cart-products p {
   font-size: 20px;
   font-weight: 400;
 }
 
-.cart-product{
+.cart-product {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -133,38 +133,38 @@ nav {
 
 }
 
-.info-cart-product{
+.info-cart-product {
   display: flex;
   justify-content: space-between;
   flex: 0.8;
 }
 
-.titulo-producto-carrito{
+.titulo-producto-carrito {
   font-size: 20px;
 }
 
-.precio-producto-carrito{
+.precio-producto-carrito {
   font-weight: 700;
   font-size: 20px;
   margin-left: 10px;
 }
 
-.cantidad-producto-carrito{
+.cantidad-producto-carrito {
   font-weight: 400;
   font-size: 20px;
 }
 
-.icon-close{
+.icon-close {
   width: 25px;
   height: 25px;
 }
 
-.icon-close:hover{
+.icon-close:hover {
   stroke: red;
   cursor: pointer;
 }
 
-.cart-total{
+.cart-total {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -172,17 +172,17 @@ nav {
   gap: 20px;
 }
 
-.cart-total h3{
+.cart-total h3 {
   font-size: 20px;
   font-weight: 700;
 }
 
-.total-pagar{
+.total-pagar {
   font-size: 20px;
   font-weight: 900;
 }
 
-.hidden-cart{
+.hidden-cart {
   display: none;
 }
 
@@ -482,7 +482,7 @@ nav {
   padding-left: 6px;
 }
 
-.social-link .social   {
+.social-link .social {
   display: inline-block;
   min-height: 40px;
   width: 40px;
@@ -537,15 +537,15 @@ nav {
   padding: 1rem;
 }
 
-.contactanos{
+.contactanos {
   font-size: 18px;
   text-decoration: none;
-  color: rgb(255, 255, 254);  
+  color: rgb(255, 255, 254);
   padding-bottom: 15px;
   transition: all 0.3s ease;
 }
 
-.contactanos:hover{
+.contactanos:hover {
   color: var(--title-button-color);
   padding-left: 6px;
 }
@@ -666,30 +666,30 @@ nav {
 
 /*DEMÁS*/
 
-.content{
+.content {
   position: sticky;
   top: 10%;
 }
 
-.colecciones{
+.colecciones {
   width: 100%;
   display: flex;
   flex-direction: column;
   gap: 10vh;
 }
 
-.producto-coleccion{
+.producto-coleccion {
   width: 100%;
   height: 5%;
 }
 
-.manga-producto{
+.manga-producto {
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
 
-.imagen-manga{
+.imagen-manga {
   width: 175px;
   height: 250px;
   display: flex;
@@ -697,50 +697,50 @@ nav {
     rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
 
-.coleccion-paginacion{
+.coleccion-paginacion {
   width: 100%;
   display: flex;
   justify-content: center;
   margin: 10px 0;
 }
 
-.pagination a{
+.pagination a {
   background-color: rgb(255, 255, 254);
   color: rgb(0, 0, 1);
 }
 
 
-.disponible-vendido{
+.disponible-vendido {
   padding: 6px 0 0 6px;
   position: absolute;
   color: rgb(255, 255, 254);
 }
 
-.disponible-vendido div{
+.disponible-vendido div {
   padding: 0 6px;
   font-weight: 300;
   text-align: center;
 }
 
-.mas{
+.mas {
   background-color: rgb(255, 113, 67);
-  margin-bottom: 6px ;
+  margin-bottom: 6px;
   padding: 0 6px;
 }
 
-.disp{
+.disp {
   background-color: rgba(37, 167, 153);
   padding: 0 6px;
 }
 
-.descuento{
+.descuento {
   margin-bottom: 6px;
   text-align: left;
-  background-color: rgb(255,0,0);
+  background-color: rgb(255, 0, 0);
   width: 50px;
 }
 
-.producto-info{
+.producto-info {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -748,19 +748,19 @@ nav {
   gap: 15px;
 }
 
-.producto-info h3{
+.producto-info h3 {
   width: 100%;
   text-align: left;
 }
 
-.producto-info h5{
+.producto-info h5 {
   width: 100%;
   font-weight: 400;
   text-align: left;
   font-size: 15px;
 }
 
-.precio-producto{
+.precio-producto {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -768,17 +768,17 @@ nav {
   padding: 0 2rem;
 }
 
-.precios{
+.precios {
   display: flex;
   align-items: center;
   gap: 5px;
 }
 
-.precio-producto p{
+.precio-producto p {
   font-size: 20px;
 }
 
-.descuentito{
+.descuentito {
   text-decoration-line: line-through;
   color: rgb(150, 150, 150);
 }
@@ -786,72 +786,72 @@ nav {
 
 /*MANGAS IMAGENES*/
 
-#manga-1{
+#manga-1 {
   background-image: url(catalogo/20th01.webp);
   background-size: cover;
 }
 
-#manga-2{
+#manga-2 {
   background-image: url(mangas/20thboys.webp);
   background-size: cover;
 }
 
-#manga-3{
+#manga-3 {
   background-image: url(catalogo/2Oth4.webp);
   background-size: cover;
 }
 
-#manga-4{
+#manga-4 {
   background-image: url(catalogo/20th05.webp);
   background-size: cover;
 }
 
-#manga-5{
+#manga-5 {
   background-image: url(catalogo/20th6.webp);
   background-size: cover;
 }
 
-#manga-6{
+#manga-6 {
   background-image: url(catalogo/20th07.webp);
   background-size: cover;
 }
 
-#manga-7{
+#manga-7 {
   background-image: url(catalogo/20th08.webp);
   background-size: cover;
 }
 
-#manga-8{
+#manga-8 {
   background-image: url(catalogo/20th09.webp);
   background-size: cover;
 }
 
-#manga-9{
+#manga-9 {
   background-image: url(catalogo/20th11.webp);
   background-size: cover;
 }
 
-#manga-10{
+#manga-10 {
   background-image: url(catalogo/bananafish1.jpg);
   background-size: cover;
 }
 
-#manga-11{
+#manga-11 {
   background-image: url(catalogo/bananafish2.jpg);
   background-size: cover;
 }
 
-#manga-12{
+#manga-12 {
   background-image: url(catalogo/bananafish3.jpg);
   background-size: cover;
 }
 
-#manga-13{
+#manga-13 {
   background-image: url(catalogo/bananafish4.webp);
   background-size: cover;
 }
 
-#manga-14{
+#manga-14 {
   background-image: url(catalogo/punpun1.webp);
   background-size: cover;
 }
@@ -859,84 +859,84 @@ nav {
 /*IMAGENES PAGINA OFERTAS*/
 
 
-#manga-15{
+#manga-15 {
   background-image: url(ofertas/Akane_banashi.webp);
   background-size: cover;
 }
 
-#manga-16{
+#manga-16 {
   background-image: url(ofertas/asasdora.webp);
   background-size: cover;
 }
 
-#manga-17{
+#manga-17 {
   background-image: url(ofertas/Blue_Period_3.webp);
   background-size: cover;
 }
 
-#manga-18{
+#manga-18 {
   background-image: url(ofertas/Blue_Period_5.webp);
   background-size: cover;
 }
 
-#manga-19{
+#manga-19 {
   background-image: url(ofertas/Boys_Abyss_02.webp);
   background-size: cover;
 }
 
-#manga-20{
+#manga-20 {
   background-image: url(ofertas/Boys_Abyss_03.webp);
   background-size: cover;
 }
 
-#manga-21{
+#manga-21 {
   background-image: url(ofertas/Boys_Abyss_05.webp);
   background-size: cover;
 }
 
-#manga-22{
+#manga-22 {
   background-image: url(catalogo/punpun1.webp);
   background-size: cover;
 }
 
-#manga-23{
+#manga-23 {
   background-image: url(ofertas/carole&tuesday02.webp);
   background-size: cover;
 }
 
-#manga-24{
+#manga-24 {
   background-image: url(ofertas/City-Hunter-vol1.webp);
   background-size: cover;
 }
 
-#manga-25{
+#manga-25 {
   background-image: url(ofertas/City-Hunter-04.webp);
   background-size: cover;
 }
 
-#manga-26{
+#manga-26 {
   background-image: url(ofertas/SC-ZorroTanuki-vol.1.webp);
   background-size: cover;
 }
 
-#manga-27{
+#manga-27 {
   background-image: url(ofertas/SC-ZorroTanuki-vol.2.webp);
   background-size: cover;
 }
 
-#manga-28{
+#manga-28 {
   background-image: url(ofertas/fullmetal1.webp);
   background-size: cover;
 }
 
-#manga-29{
+#manga-29 {
   background-image: url(ofertas/fullmetal2.webp);
   background-size: cover;
 }
 
 /*NOVEDADES*/
 
-.novedades{
+.novedades {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -944,77 +944,77 @@ nav {
   padding: 4rem 7rem;
 }
 
-.novedades h6{
-  font-size:3rem;
+.novedades h6 {
+  font-size: 3rem;
   font-weight: 400;
 }
 
-.novedades p{
+.novedades p {
   text-align: justify;
 }
 
-.p-p{
+.p-p {
   width: 100%;
   padding-bottom: 1.5rem;
   border-bottom: 1px solid black;
 }
 
-#manga-30{
+#manga-30 {
   background-image: url(novedades/muerteasfiexiante.webp);
   background-size: cover;
 }
 
-#manga-31{
+#manga-31 {
   background-image: url(novedades/the-horizon-vol-1.jpg);
   background-size: cover;
 }
 
-#manga-32{
+#manga-32 {
   background-image: url(novedades/versus2.jpg);
   background-size: cover;
 }
 
-#manga-33{
+#manga-33 {
   background-image: url(novedades/thebeggining.webp);
   background-size: cover;
 }
 
-#manga-34{
+#manga-34 {
   background-image: url(novedades/theboxer.webp);
   background-size: cover;
 }
 
-#manga-35{
+#manga-35 {
   background-image: url(novedades/hokkaido.jpg);
   background-size: cover;
 }
 
-#manga-36{
+#manga-36 {
   background-image: url(novedades/homunculus8.jpg);
   background-size: cover;
 }
 
-#manga-37{
+#manga-37 {
   background-image: url(novedades/sdete001.webp);
   background-size: cover;
 }
 
-#manga-38{
+#manga-38 {
   background-image: url(novedades/sobrecubierta_los_diarios_de_la_boticaria_.webp);
   background-size: cover;
 }
 
-#manga-39{
+#manga-39 {
   background-image: url(novedades/sobrecubierta_los_diarios_de_la_boticaria_2.webp);
   background-size: cover;
 }
 
-#manga-40{
+#manga-40 {
   background-image: url(novedades/slamdunk16.jpg);
   background-size: cover;
 }
 
-#manga-41{
+#manga-41 {
   background-image: url(novedades/sikim002.webp);
   background-size: cover;
 }
@@ -1022,15 +1022,22 @@ nav {
 
 /*login/registro*/
 
-.login-register{
+.login-register {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  border-bottom: 1px solid rgb(150,150,150);
+  border-bottom: 1px solid rgb(150, 150, 150);
   padding: .1em 1em;
 }
 
-.login-register a{
+.login-register a {
   text-decoration: none;
   color: rgb(48, 43, 43);
+  font-weight:500;
+}
+
+.login-register a:hover {
+  text-decoration: none;
+  color: rgb(167, 49, 33);
+  transition: all 0.5s ease-in;
 }
